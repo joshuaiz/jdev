@@ -1,0 +1,922 @@
+/******************************************************************
+Site Name: Jockey International PR Marketing Site
+Author: Joshua Michaels/BioDesign
+Author URI: http://wearebio.com/
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	// background: url(../images/background-three.jpg) repeat center center fixed; /* textured dark background */
+	// -webkit-background-size: cover;
+ //  	-moz-background-size: cover;
+ //  	-o-background-size: cover;
+ //  	background-size: cover;
+
+}
+
+// .ie7.category #content, .ie8.category #content, .ie9.category #content, .ie7.archive #content, .ie8.archive #content, .ie9.archive #content, .ie7.single #content, .ie8.single #content, .ie9.single #content, .ie7.page:not(.home) #content, .ie8.page:not(.home) #content, .ie9.page:not(.home) #content {
+// 		margin-top: 27em !important;
+// }
+
+#content {
+	position: relative;
+	z-index: 3;
+	margin-top: 2em;
+}
+
+.home {
+	.breadcrumbs {
+		// display: none;
+	}
+	#content {
+	
+	// margin-top: 12em;
+
+	#inner-content {
+		padding: 0;
+		background-color: none;
+	}
+	#main { margin-top: 0; }
+
+	#home-posts {
+		position: relative; 
+		margin-top: 0;
+		// z-index: 8999;
+	}
+	.hentry header { padding: 0; }
+	.owl-item {
+		// max-width: 185px;
+		// margin-right: 4px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+	}
+	#sidebar1 {
+		margin-top: -5.2em;
+	}
+}
+
+.ie10.windows.home {
+	#content {
+		// margin-top: 2em !important;
+	}
+}
+
+.ie.home #content #home-posts, .windows.home #content #home-posts {
+	// margin-top: 6em !important;
+}
+
+.ie.home #content, .windows.home #content {
+	margin-top: 7em;
+}
+
+
+.gallery-item {
+	float: left;
+	width: 25%;
+}
+
+.post-thumbnail {
+	float: left;
+	margin-right: 1.5em;
+	img { }
+}
+
+.post-excerpt {
+
+}
+
+.single, .category, .archive, .page:not(.home) {
+	#inner-content {
+		// background-color: rgba(0, 0, 0, 0.5);
+		padding: 0 1.5em 0 0;
+	}
+
+	#main {
+		padding: 0 2em 0 0;
+	}
+	#content {
+		// margin-top: 25em;
+	}
+}
+
+.ie9, .ie8, .ie10 {
+	.main-menu li a {
+		/*
+padding: 1.5em 1.5em .5em 0 !important;
+		font-size: 12px !important;
+*/
+		// padding-left: 10px !important;
+	}
+	.owl-carousel {
+		margin-top: 0 !important;
+	}
+	// #content {
+	// 	margin-top: 27em !important;
+	// }
+}
+
+.ie9.home, .ie8.home {
+	#home-posts {
+		// margin-top: 0 !important;
+	}
+}
+
+.ie.windows.home {
+	#content {
+		// margin-top: 9em !important;
+	}
+	// #home-posts {
+	// 	margin-top: 0 !important;
+	// }
+}
+
+.windows.ie10.home {
+	#content {
+		// margin-top: 9em !important;
+	}
+	// #home-posts {
+	// 	margin-top: 0 !important;
+	// }
+}
+
+.ie8 {
+
+}
+
+.ie9, .ie8, .ie10 {
+	.main-menu .sub-menu {
+		// margin-top: -10px;
+		z-index: 999999;
+	}
+	.main-menu li li a {
+		padding: 6px 0 6px 10px !important;
+		// font-size: 14px !important;
+		// padding-left: 10px !important;
+	}
+	.owl-carousel {
+		// margin-top: 2em !important;
+	}
+
+}
+
+// .ie.ie8.page:not('.home') #content, .ie.ie8.category #content, .ie.ie8.single #content, .ie9.page:not('.home') #content, .ie.ie9.category #content, 	.ie.ie9.single #content {
+// 	margin-top: 31em !important;
+// }
+
+.ie.page:not(.home) #content, .ie10.page:not(.home) #content {
+	// margin-top: 21em !important;
+}
+
+.chrome.windows.home #content {
+	// margin-top: 9em !important;
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.wrap {
+	max-width: 1152px;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+	position: fixed;
+    top: 0;
+    left: 0;
+    // z-index: 9;
+    width: 100%;
+    background: transparent;
+    height: 69px;
+    color:#fff;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.header-background {
+	display: none;
+}
+
+// .header-background {
+// 	position: fixed;
+// 	top: 0;
+// 	z-index: 1;
+// 	display: block;
+// 	img {
+// 		position: fixed;
+// 		z-index: 1;
+// 		display: block; 
+// 		max-width: 100%;
+// 		width: 100%; /* seems to help with resizing image on window resize */
+// 		height: auto;
+// 		object-fit: cover;
+// 	}
+// }
+
+#banner {
+  // margin-bottom: 50px;
+	overflow: hidden;
+	width: 100%;
+	height: 610px;
+	position: relative;
+	top: 0;
+	clear: both;
+	background: transparent url(/wp-content/uploads/2014/11/mainpage.png) top center no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale')";
+}
+
+
+
+.wrap-center{
+	margin: 0 auto;
+	position: relative;
+	max-width: 73.231em;
+}
+
+.banner-centered {
+	// text-align: center;
+	// position: absolute;
+	display: block;
+	// max-width: 75.231em;
+	// height: inherit;
+	// overflow: hidden;
+	margin-top: 140px;
+	max-width: 72.223%;
+		text-align: left;
+		h2 { font-size: 2em; }
+}
+
+.usa-originals-global-programs, .international-collection, .international-collection-global-programs, .jockey-sport {
+	.banner-centered {
+		margin-top: 200px;
+	}
+}
+
+
+// .banner-centered h2 {
+// 	font-size: 5.385em;
+// 	line-height: 1.5;
+// 	text-transform: uppercase;
+// 	letter-spacing: 2px;
+// 	color: #fafafa;
+// 	font-weight: 100;
+// 	display: block;
+// }
+
+// /* 'shrink' class added by jQuery to collapse header on scroll */
+
+.header.shrink {
+	background: #000;
+	z-index: 99;
+	// #menu-main {
+	// 	// top: 14px;
+	// }
+}
+
+// .header-shrink {
+// 	#content {
+// 		margin-top: 28em;
+// 		-webkit-transition: margin 0.2s;
+//     	-moz-transition: margin 0.2s;
+//     	transition: margin 0.2s;
+// 	}
+// }
+
+// .header-background.shrink, .header-background.shrink-mobile {
+// 	overflow: hidden;
+// 	.header-bg {
+// 		// margin-top: -100px;
+// 		position: static !important;
+// 	}
+// }
+
+// .shrink {
+// 	max-width:100%;
+// 	width: 100%;
+// 	height: 200px;
+// 	// overflow: hidden;
+// 	z-index: 99999 !important;
+// }
+
+// .shrink-mobile {
+// 	max-width:100%;
+// 	height: 150px !important;
+// 	// overflow: hidden;
+// 	z-index: 9999;
+// }
+
+#inner-header {
+	position: relative;
+	z-index: 9999;
+	zoom: 1;
+}
+
+#logo {
+	top: 14px;
+	float: left;
+	position: relative;
+	img {
+		width: 150px;
+		height: auto;
+		&:hover, &:focus {
+			opacity: 0.8;
+		}
+	}
+	.swirl {
+		width: 33px;
+		height: 33px;
+	}
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav-wrap {
+	position: relative;
+	z-index: 99999;
+	zoom: 1;
+	float: right;
+}
+
+.header nav.main-menu { 
+	position: relative; 
+	z-index: 99999;
+	display: block;
+	zoom: 1;
+}
+
+#menu-main {
+	position: relative;
+	top: 17px;
+	float: left;
+}
+
+
+
+.main-menu {
+	border: 0;  /* end current highlighters */
+	ul {
+		margin-top:0;
+	}
+	li {
+		position: relative;
+		float: left;
+
+		a {
+			border-bottom: 0;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 11px;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				color: $jockey-red;
+				text-decoration: none;
+			}
+		}
+
+		&:first-child { }
+		&:last-child { }
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			position: absolute;
+			visibility: hidden;
+			overflow: hidden;
+			margin-top: 0;
+			border-top: 0;
+
+			li {
+				background: #7F7F7F;
+
+				a {
+					display: block;
+					padding: 8px 10px;
+					padding-left: 10px;
+					width: 220px;
+					border-right: 0;
+					font-size: 11px;
+
+					&:hover,
+					&:focus { background: $black; }
+
+					&:link { }
+				}
+
+				&:first-child { }
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul { }
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current-page-ancestor {
+				a { }
+			}
+		}
+
+		li#menu-item-22 {
+			max-width: 200px;
+		}
+
+		ul.sub-menu.partner-ul {
+			// left: -224px;
+			width: 440px;
+			right: -50px;
+			.partner-group {
+				float: left;
+			}
+			li.menu-item {
+				float: none;
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover ul {
+			top: auto;
+			visibility:visible;
+			overflow: visible;
+		}
+
+	} /* end .menu ul li */
+
+	li.current-menu-item > a, li.current_page_item > a {
+		color: $jockey-light-gray;
+	}
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+		a { }
+	}
+
+} /* end .nav */
+
+/*********************
+BREADCRUMBS STYLES
+*********************/
+
+.bc-sticky {
+	position: fixed !important;
+	z-index: 9 !important;
+	display: block !important;
+}
+
+.breadcrumbs-outer {
+	top: 69px;
+	z-index: 9;
+	display: none;
+	width: 100%;
+	background: #222;
+}
+
+.ipad, .iphone, .android, .blackberry, .winphone, .kindle, .kindlefire {
+	.breadcrumbs {
+		position: fixed !important;
+		top: 150px !important;
+		z-index: 99 !important;
+		display: block !important;
+	}
+}
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+I like having these above 768px - so there.
+********************/
+
+.rtl { }                           /* for sites that are read right to left (i.e. hebrew) */
+.home {
+	#banner {
+		height: 650px;
+		.wrap-center {
+			max-width: 100% !important;
+			width: 100%;
+		}
+		.banner-centered {
+			width: 100%;
+			max-width: 100% !important;
+			text-align: center !important;
+		}
+
+	}
+	#content {
+		.posts-loop {
+			padding-right: 3em;
+		}
+	}
+	.banner-centered {
+		margin-top: 200px;
+		width: 100%;
+	}
+}                       /* home page */
+.blog { }                          /* blog template page */
+.archive { }                       /* archive page */
+.date { }                          /* date archive page */
+	.date-paged-1 { }                /* replace the number to the corresponding page number */
+.search { }                        /* search page */
+	.search-results { }              /* search result page */
+	.search-no-results { }           /* no results search page */
+	.search-paged-1 { }              /* individual paged search (i.e. body.search-paged-3) */
+.error404 { }                      /* 404 page */
+.single, .parent-partner-pages, .partners {
+	#banner {
+		display: none;
+	}
+	.header {
+		background: #000;
+		z-index: 999;
+	}
+	.breadcrumbs-outer {
+		position: fixed !important;
+		z-index: 9 !important;
+		display: block !important;
+	}
+	#content {
+		margin-top: 132px;
+	}
+	
+}                        /* single post page */
+	.postid-1 { }                    /* individual post page by id (i.e. body.postid-73) */
+	.single-paged-1 { }              /* individual paged single (i.e. body.single-paged-3) */
+.attachment { }                    /* attatchment page */
+	.attachmentid-1 { }              /* individual attatchment page (i.e. body.attachmentid-763) */
+	.attachment-mime-type { }        /* style mime type pages */
+.author { }                        /* author page */
+	.author-nicename { }             /* user nicename (i.e. body.author-samueladams) */
+	.author-paged-1 { }              /* paged author archives (i.e. body.author-paged-4) for page 4 */
+.category { }                      /* category page */
+	.category-1 { }                  /* individual category page (i.e. body.category-6) */
+	.category-paged-1 { }            /* replace the number to the corresponding page number */
+.tag { }                           /* tag page */
+	.tag-slug { }                    /* individual tag page (i.e. body.tag-news) */
+	.tag-paged-1 { }                 /* replace the number to the corresponding page number */
+.page-template { }                 /* custom page template page */
+	.page-template-page-php { }      /* individual page template (i.e. body.page-template-contact-php */
+	.page-paged-1 { }                /* replace the number to the corresponding page number */
+	.page-parent { }                 /* parent page template */
+	.page-child { }                  /* child page template */
+	.parent-pageid-1 { }             /* replace the number to the corresponding page number */
+.logged-in { }                     /* if user is logged in */
+.paged { }                         /* paged items like search results or archives */
+	.paged-1 { }                     /* individual paged (i.e. body.paged-3) */
+
+.partners:not(.category-33) {
+	.header {
+
+		background: transparent url(/wp-content/uploads/2014/05/PARTNER.png) top center no-repeat fixed !important;
+	}
+	.header.shrink {
+		height: 69px !important;
+	}
+}
+
+.category-33 {
+	#banner {
+		display: block;
+	}
+	.breadcrumbs-outer.bc-sticky {
+	position: fixed !important;
+	z-index: 9 !important;
+	display: block !important;
+}
+
+.breadcrumbs-outer {
+	top: 69px;
+	z-index: 9;
+	display: none !important;
+	width: 100%;
+	background: #222;
+}
+	.header {
+
+		background: transparent url(/wp-content/uploads/2014/05/PARTNER.png) top center no-repeat fixed;
+	}
+	#content {
+		position: relative;
+		z-index: 3;
+		margin-top: 2em;
+	}
+}
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+#sidebar1 {
+	float: right;
+	padding-right: 0;
+	width: 25%;
+}
+
+.sidebar {
+	float: right;
+	padding-right: 0;
+	width: 25%;
+	h3.widget-title {
+		border-bottom: 2px solid #444;
+		padding-bottom: 8px;
+	}
+	.posts-link {
+		line-height: 15px;
+		margin: 8px 0;
+		a {
+			text-decoration: none;
+			font-size: 13px;
+		}
+	}
+}
+
+	.widgettitle {
+		margin-bottom: 0.75em;
+		border-bottom: 2px solid #444;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+
+	.widget_recent_entries {
+		a {
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 300;
+		}
+	}
+
+	.widget {
+		margin: 2.2em 0;
+		padding: 0 10px;
+
+		ul {
+			li {
+				line-height: 15px;
+				margin-bottom: 0.75em;
+
+				&:first-child { }
+				&:last-child { }
+				a {
+					text-decoration: none;
+					
+					margin: 8px 0;
+
+			text-decoration: none;
+			font-size: 13px;
+		
+
+				}
+				/* deep nesting */
+
+				ul {
+					margin-top: 0.75em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+
+	/* links widget */
+	.widget_links { }
+	.widget_links ul { }
+	.widget_links ul li { }
+	.widget_links ul li a { }
+
+	/* meta widget */
+	.widget_meta { }
+	.widget_meta ul { }
+	.widget_meta ul li { }
+	.widget_meta ul li a { }
+
+	/* pages widget */
+	.widget_pages { }
+	.widget_pages ul { }
+	.widget_pages ul li { }
+	.widget_pages ul li a { }
+
+	/* recent-posts widget */
+	.widget_recent_entries { }
+	.widget_recent_entries ul { }
+	.widget_recent_entries ul li { }
+	.widget_recent_entries ul li a { }
+
+	/* archives widget */
+	.widget_archive { }
+	.widget_archive ul { }
+	.widget_archive ul li { }
+	.widget_archive ul li a { }
+	.widget_archive select { }
+	.widget_archive option { }
+
+	/* tag-cloud widget */
+	.widget_links { }
+	.widget_links li:after { }
+	.widget_links li:before { }
+	.widget_tag_cloud { }
+	.widget_tag_cloud a { }
+	.widget_tag_cloud a:after { }
+	.widget_tag_cloud a:before { }
+
+	/* calendar widget */
+	.widget_calendar { }
+	#calendar_wrap { }
+	#calendar_wrap th { }
+	#calendar_wrap td { }
+	#wp-calendar tr td { }
+	#wp-calendar caption { }
+	#wp-calendar a { }
+	#wp-calendar #today { }
+	#wp-calendar #prev { }
+	#wp-calendar #next { }
+	#wp-calendar #next a { }
+	#wp-calendar #prev a { }
+
+	/* category widget */
+	.widget_categories { }
+	.widget_categories ul { }
+	.widget_categories ul li { }
+	.widget_categories ul ul.children { }
+	.widget_categories a { }
+	.widget_categories select{ }
+	.widget_categories select#cat { }
+	.widget_categories select.postform { }
+	.widget_categories option { }
+	.widget_categories .level-0 { }
+	.widget_categories .level-1 { }
+	.widget_categories .level-2 { }
+	.widget_categories .level-3 { }
+
+	/* recent-comments widget */
+	.recentcomments { }
+	#recentcomments { }
+	#recentcomments li { }
+	#recentcomments li a { }
+	.widget_recent_comments { }
+
+	/* search widget */
+	#searchform { }
+	.widget_search { }
+	.screen-reader-text { }
+
+	/* text widget */
+	.textwidget { }
+	.widget_text { }
+	.textwidget p { }
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer-links {
+	ul {
+		li {
+			a {
+				&:hover { }
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul { }
+		}
+	}
+} /* end .footer-links */
+
+
+/*!
+ * Polyfill CSS object-fit
+ * http://helloanselm.com/object-fit
+ *
+ * @author: Anselm Hannemann <hello@anselm-hannemann.com> 
+ * @author: Christian "Schepp" Schaefer <schaepp@gmx.de>
+ * @version: 0.3.1
+ *
+ */
+
+x-object-fit {
+	position: relative !important;
+	display: inline-block !important;
+}
+
+x-object-fit > .x-object-fit-taller,
+x-object-fit > .x-object-fit-wider {
+	position: absolute !important;
+	top: -100% !important;
+	right: -100% !important;
+	bottom: -100% !important;
+	left: -100% !important;
+	margin: auto !important;
+}
+
+.x-object-fit-none > .x-object-fit-taller,
+.x-object-fit-none > .x-object-fit-wider {
+	width: auto !important;
+	height: auto !important;
+}
+
+.x-object-fit-fill > .x-object-fit-taller,
+.x-object-fit-fill > .x-object-fit-wider {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.x-object-fit-contain > .x-object-fit-taller {
+	width: auto !important;
+	height: 100% !important;
+}
+
+.x-object-fit-contain > .x-object-fit-wider {
+	width: 100% !important;
+	height: auto !important;
+}
+
+.x-object-fit-cover > .x-object-fit-taller,
+.x-object-fit-cover > .x-object-fit-wider {
+	max-width: none !important;
+	max-height: none !important;
+}
+
+.x-object-fit-cover > .x-object-fit-taller {
+	max-width: none !important;
+	width: 100% !important;
+	height: auto !important;
+}
+
+.x-object-fit-cover > .x-object-fit-wider {
+	max-width: none !important;
+	width: auto !important;
+	height: 100% !important;
+}
+
+.x-object-position-top > .x-object-fit-taller,
+.x-object-position-top > .x-object-fit-wider {
+	top: 0 !important;
+	bottom: auto !important;
+}
+
+.x-object-position-right > .x-object-fit-taller,
+.x-object-position-right > .x-object-fit-wider {
+	right: 0 !important;
+	left: auto !important;
+}
+
+.x-object-position-bottom > .x-object-fit-taller,
+.x-object-position-bottom > .x-object-fit-wider {
+	top: auto !important;
+	bottom: 0 !important;
+}
+
+.x-object-position-left > .x-object-fit-taller,
+.x-object-position-left > .x-object-fit-wider {
+	right: auto !important;
+	left: 0 !important;
+}

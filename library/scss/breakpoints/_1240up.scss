@@ -1,0 +1,110 @@
+/******************************************************************
+Site Name: Jockey International PR Marketing Site
+Author: Joshua Michaels/BioDesign
+Author URI: http://wearebio.com/
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/
+
+.main-menu li a {
+	font-size: 13px;
+}
+
+.single, .category, .archive {
+	#content {
+		// margin-top: 39em;
+	}
+}
+
+.ie.home #content, .windows.home #content {
+    // margin-top: 12em;
+}
+
+.ie9, .ie10, .ie11 {
+	.main-menu li a {
+	// padding: 1.5em 1.5em .5em 0 !important;
+	// font-size: 16px !important;
+	}
+	.owl-carousel {
+		top: 0 !important;
+	}
+}
+
+.ie8  {
+	.main-menu, .main-menu li .sub-menu { z-index: 99999; }
+	.main-menu li a {
+	// padding: 1.5em 1.2em .5em 0 !important;
+	// font-size: 16px !important;
+	}
+	.owl-carousel {
+		// top: 2em !important;
+	}
+}
+
+.ie9 {
+	#home-posts {
+		// margin-top: 2em !important;
+	}
+}
+
+.ie10.home {
+	#content {
+		// margin-top: 7em !important;
+	}
+}
+
+.lt-ie9 {
+	.ie8.home {
+	#content {
+		// margin-top: 8em !important;
+	}
+	#home-posts {
+		// margin-top: 7em !important;
+	}
+}
+}
+
+.ie.home {
+	#content {
+		// margin-top: 12em !important;
+	}
+}
+
+.ie9.home {
+	#content {
+		// margin-top: 11em !important;
+	}
+}
+
+.ie.page:not(.home) #content, .ie.category #content, .ie.archive #content, .ie.single #content {
+	// margin-top: 39em !important;
+}
+
+.ie9, .ie8, .ie10 {
+	#content {
+		// margin-top: 39em !important;
+	}
+}
+
+.ie.home #content #home-posts, .windows.home #content #home-posts {
+	// margin-top: 10em !important;
+}
+
+
+// .main-menu {
+	
+// 	li {
+
+// 		a {
+			
+// 			padding: 1.5em 1.4em .5em 0;
+// 			font-size: 17px;
+// 			&:nth-of-type(5) { padding-right: 0; }
+
+// 			}
+// 		}
+// }

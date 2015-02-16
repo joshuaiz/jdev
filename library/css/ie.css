@@ -1,0 +1,721 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: IE Stylesheet
+
+So instead of using the respond.js file to add media query support
+to IE, we're going to use SASS to create an easily readable css file.
+Here, we import all the styles the standard stylesheet gets, only
+without the media queries. No need to worry about editing anything!
+
+******************************************************************/
+/******************************************************************
+IMPORTS & DEPENDENCIES
+Remember, all the BASE styles are called already since IE can
+read those. Below, we need to import only the stuff IE can't
+understand (what's inside the media queries). We also need to
+import the mixins file so SASS can understand the variables.
+******************************************************************/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Variables
+
+Here is where we declare all our variables like colors, fonts,
+base values, and defaults. We want to make sure this file ONLY
+contains variables that way our files don't get all messy.
+No one likes a mess.
+
+******************************************************************/
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Mixins Stylesheet
+
+This is where you can take advantage of Sass' great features: Mixins.
+I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques gradients.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more.
+
+Helpful:
+http://sachagreif.com/useful-sass-mixins/
+http://thesassway.com/intermediate/leveraging-sass-mixins-for-cleaner-code
+http://web-design-weekly.com/blog/2013/05/12/handy-sass-mixins/
+
+******************************************************************/
+/*********************
+TRANSITION
+*********************/
+/*
+I totally rewrote this to be cleaner and easier to use.
+You'll need to be using Sass 3.2+ for these to work.
+Thanks to @anthonyshort for the inspiration on these.
+USAGE: @include transition(all 0.2s ease-in-out);
+*/
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can
+really slow down your CSS. Don't overdo it.
+*********************/
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+BOX SIZING
+*********************/
+/* @include box-sizing(border-box); */
+/* NOTE: value of "padding-box" is only supported in Gecko. So
+probably best not to use it. I mean, were you going to anyway? */
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: IE Grid Styles
+
+Since the example grid is based on media queries, so rather than
+setup some js library that would make IE8 and below understand
+media queries, let's just add some styles that serves a fixed grid.
+
+Again, if you want to roll your own, just remove this junk and put
+whatever you use in here.
+
+******************************************************************/
+.win .main-menu li#menu-item-22, .win .main-menu li#menu-item-22 a {
+  padding-right: 0 !important;
+  width: 200px !important; }
+
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection.
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+/*
+IMPORTANT NOTE ABOUT SASS 3.3 & UP
+You can't use @extend within media queries
+anymore, so just be aware that if you drop
+them in here, they won't work.
+*/
+/*********************
+NAVIGATION STYLES
+*********************/
+/* .menu is clearfixed inside mixins.scss */
+.menu {
+  /* end .menu ul */ }
+  .menu ul {
+    /* end .menu ul li */
+    /* highlight current page */
+    /* end current highlighters */ }
+    .menu ul li {
+      /*
+      plan your menus and drop-downs wisely.
+      */ }
+      .menu ul li a {
+        /*
+        you can use hover styles here even though this size
+        has the possibility of being a mobile device.
+        */ }
+
+/* end .menu */
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+/* entry content */
+.entry-content {
+  /* at this larger size, we can start to align images */ }
+  .entry-content .alignleft, .entry-content img.alignleft {
+    margin-right: 1.5em;
+    display: inline;
+    float: left; }
+  .entry-content .alignright, .entry-content img.alignright {
+    margin-left: 1.5em;
+    display: inline;
+    float: right; }
+  .entry-content .aligncenter, .entry-content img.aligncenter {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    clear: both; }
+
+/* end .entry-content */
+/*********************
+FOOTER STYLES
+*********************/
+/*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+/* end .footer-links */
+/******************************************************************
+Site Name: Jockey International PR Marketing Site
+Author: Joshua Michaels/BioDesign
+Author URI: http://wearebio.com/
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+/*********************
+GENERAL STYLES
+*********************/
+#content {
+  position: relative;
+  z-index: 3;
+  margin-top: 2em; }
+
+.home #content #inner-content {
+  padding: 0;
+  background-color: none; }
+.home #content #main {
+  margin-top: 0; }
+.home #content #home-posts {
+  position: relative;
+  margin-top: 0; }
+.home #content .hentry header {
+  padding: 0; }
+.home #content .owl-item:last-of-type {
+  margin-right: 0; }
+.home #sidebar1 {
+  margin-top: -5.2em; }
+
+.ie.home #content, .windows.home #content {
+  margin-top: 7em; }
+
+.gallery-item {
+  float: left;
+  width: 25%; }
+
+.post-thumbnail {
+  float: left;
+  margin-right: 1.5em; }
+
+.single #inner-content, .category #inner-content, .archive #inner-content, .page:not(.home) #inner-content {
+  padding: 0 1.5em 0 0; }
+.single #main, .category #main, .archive #main, .page:not(.home) #main {
+  padding: 0 2em 0 0; }
+
+.ie9 .main-menu li a, .ie8 .main-menu li a, .ie10 .main-menu li a {
+  		/*
+  padding: 1.5em 1.5em .5em 0 !important;
+  		font-size: 12px !important;
+  */ }
+.ie9 .owl-carousel, .ie8 .owl-carousel, .ie10 .owl-carousel {
+  margin-top: 0 !important; }
+
+.ie9 .main-menu .sub-menu, .ie8 .main-menu .sub-menu, .ie10 .main-menu .sub-menu {
+  z-index: 999999; }
+.ie9 .main-menu li li a, .ie8 .main-menu li li a, .ie10 .main-menu li li a {
+  padding: 6px 0 6px 10px !important; }
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+.wrap {
+  max-width: 1152px; }
+
+/*********************
+HEADER STYLES
+*********************/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  height: 69px;
+  color: #fff;
+  -webkit-transition: height 0.5s;
+  -moz-transition: height 0.5s;
+  transition: height 0.5s; }
+
+.header-background {
+  display: none; }
+
+#banner {
+  overflow: hidden;
+  width: 100%;
+  height: 610px;
+  position: relative;
+  top: 0;
+  clear: both;
+  background: transparent url(/wp-content/uploads/2014/11/mainpage.png) top center no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale')"; }
+
+.wrap-center {
+  margin: 0 auto;
+  position: relative;
+  max-width: 73.231em; }
+
+.banner-centered {
+  display: block;
+  margin-top: 140px;
+  max-width: 72.223%;
+  text-align: left; }
+  .banner-centered h2 {
+    font-size: 2em; }
+
+.usa-originals-global-programs .banner-centered, .international-collection .banner-centered, .international-collection-global-programs .banner-centered, .jockey-sport .banner-centered {
+  margin-top: 200px; }
+
+.header.shrink {
+  background: #000;
+  z-index: 99; }
+
+#inner-header {
+  position: relative;
+  z-index: 9999;
+  zoom: 1; }
+
+#logo {
+  top: 14px;
+  float: left;
+  position: relative; }
+  #logo img {
+    width: 150px;
+    height: auto; }
+    #logo img:hover, #logo img:focus {
+      opacity: 0.8; }
+  #logo .swirl {
+    width: 33px;
+    height: 33px; }
+
+/*********************
+NAVIGATION STYLES
+*********************/
+.nav-wrap {
+  position: relative;
+  z-index: 99999;
+  zoom: 1;
+  float: right; }
+
+.header nav.main-menu {
+  position: relative;
+  z-index: 99999;
+  display: block;
+  zoom: 1; }
+
+#menu-main {
+  position: relative;
+  top: 17px;
+  float: left; }
+
+.main-menu {
+  border: 0;
+  /* end current highlighters */
+  /* end .menu ul li */
+  /* highlight current page */ }
+  .main-menu ul {
+    margin-top: 0; }
+  .main-menu li {
+    position: relative;
+    float: left;
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    /* showing sub-menus */ }
+    .main-menu li a {
+      border-bottom: 0;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 11px;
+      /*
+      you can use hover styles here even though this size
+      has the possibility of being a mobile device.
+      */ }
+      .main-menu li a:hover, .main-menu li a:focus {
+        color: #C00000;
+        text-decoration: none; }
+    .main-menu li ul.sub-menu,
+    .main-menu li ul.children {
+      position: absolute;
+      visibility: hidden;
+      overflow: hidden;
+      margin-top: 0;
+      border-top: 0;
+      /* highlight sub-menu current page */ }
+      .main-menu li ul.sub-menu li,
+      .main-menu li ul.children li {
+        background: #7F7F7F;
+        /*
+        if you need to go deeper, go nuts
+        just remember deeper menus suck
+        for usability. k, bai.
+        */ }
+        .main-menu li ul.sub-menu li a,
+        .main-menu li ul.children li a {
+          display: block;
+          padding: 8px 10px;
+          padding-left: 10px;
+          width: 220px;
+          border-right: 0;
+          font-size: 11px; }
+          .main-menu li ul.sub-menu li a:hover, .main-menu li ul.sub-menu li a:focus,
+          .main-menu li ul.children li a:hover,
+          .main-menu li ul.children li a:focus {
+            background: #000; }
+        .main-menu li ul.sub-menu li:last-child a,
+        .main-menu li ul.children li:last-child a {
+          border-bottom: 0; }
+    .main-menu li li#menu-item-22 {
+      max-width: 200px; }
+    .main-menu li ul.sub-menu.partner-ul {
+      width: 440px;
+      right: -50px; }
+      .main-menu li ul.sub-menu.partner-ul .partner-group {
+        float: left; }
+      .main-menu li ul.sub-menu.partner-ul li.menu-item {
+        float: none; }
+    .main-menu li:hover ul {
+      top: auto;
+      visibility: visible;
+      overflow: visible; }
+  .main-menu li.current-menu-item > a, .main-menu li.current_page_item > a {
+    color: #A5A5A5; }
+
+/* end .nav */
+/*********************
+BREADCRUMBS STYLES
+*********************/
+.bc-sticky {
+  position: fixed !important;
+  z-index: 9 !important;
+  display: block !important; }
+
+.breadcrumbs-outer {
+  top: 69px;
+  z-index: 9;
+  display: none;
+  width: 100%;
+  background: #222; }
+
+.ipad .breadcrumbs, .iphone .breadcrumbs, .android .breadcrumbs, .blackberry .breadcrumbs, .winphone .breadcrumbs, .kindle .breadcrumbs, .kindlefire .breadcrumbs {
+  position: fixed !important;
+  top: 150px !important;
+  z-index: 99 !important;
+  display: block !important; }
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+I like having these above 768px - so there.
+********************/
+/* for sites that are read right to left (i.e. hebrew) */
+.home #banner {
+  height: 650px; }
+  .home #banner .wrap-center {
+    max-width: 100% !important;
+    width: 100%; }
+  .home #banner .banner-centered {
+    width: 100%;
+    max-width: 100% !important;
+    text-align: center !important; }
+.home #content .posts-loop {
+  padding-right: 3em; }
+.home .banner-centered {
+  margin-top: 200px;
+  width: 100%; }
+
+/* home page */
+/* blog template page */
+/* archive page */
+/* date archive page */
+/* replace the number to the corresponding page number */
+/* search page */
+/* search result page */
+/* no results search page */
+/* individual paged search (i.e. body.search-paged-3) */
+/* 404 page */
+.single #banner, .parent-partner-pages #banner, .partners #banner {
+  display: none; }
+.single .header, .parent-partner-pages .header, .partners .header {
+  background: #000;
+  z-index: 999; }
+.single .breadcrumbs-outer, .parent-partner-pages .breadcrumbs-outer, .partners .breadcrumbs-outer {
+  position: fixed !important;
+  z-index: 9 !important;
+  display: block !important; }
+.single #content, .parent-partner-pages #content, .partners #content {
+  margin-top: 132px; }
+
+/* single post page */
+/* individual post page by id (i.e. body.postid-73) */
+/* individual paged single (i.e. body.single-paged-3) */
+/* attatchment page */
+/* individual attatchment page (i.e. body.attachmentid-763) */
+/* style mime type pages */
+/* author page */
+/* user nicename (i.e. body.author-samueladams) */
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+/* category page */
+/* individual category page (i.e. body.category-6) */
+/* replace the number to the corresponding page number */
+/* tag page */
+/* individual tag page (i.e. body.tag-news) */
+/* replace the number to the corresponding page number */
+/* custom page template page */
+/* individual page template (i.e. body.page-template-contact-php */
+/* replace the number to the corresponding page number */
+/* parent page template */
+/* child page template */
+/* replace the number to the corresponding page number */
+/* if user is logged in */
+/* paged items like search results or archives */
+/* individual paged (i.e. body.paged-3) */
+.partners:not(.category-33) .header {
+  background: transparent url(/wp-content/uploads/2014/05/PARTNER.png) top center no-repeat fixed !important; }
+.partners:not(.category-33) .header.shrink {
+  height: 69px !important; }
+
+.category-33 #banner {
+  display: block; }
+.category-33 .breadcrumbs-outer.bc-sticky {
+  position: fixed !important;
+  z-index: 9 !important;
+  display: block !important; }
+.category-33 .breadcrumbs-outer {
+  top: 69px;
+  z-index: 9;
+  display: none !important;
+  width: 100%;
+  background: #222; }
+.category-33 .header {
+  background: transparent url(/wp-content/uploads/2014/05/PARTNER.png) top center no-repeat fixed; }
+.category-33 #content {
+  position: relative;
+  z-index: 3;
+  margin-top: 2em; }
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+#sidebar1 {
+  float: right;
+  padding-right: 0;
+  width: 25%; }
+
+.sidebar {
+  float: right;
+  padding-right: 0;
+  width: 25%; }
+  .sidebar h3.widget-title {
+    border-bottom: 2px solid #444;
+    padding-bottom: 8px; }
+  .sidebar .posts-link {
+    line-height: 15px;
+    margin: 8px 0; }
+    .sidebar .posts-link a {
+      text-decoration: none;
+      font-size: 13px; }
+
+.widgettitle {
+  margin-bottom: 0.75em;
+  border-bottom: 2px solid #444;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+.widget_recent_entries a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+.widget {
+  margin: 2.2em 0;
+  padding: 0 10px; }
+  .widget ul li {
+    line-height: 15px;
+    margin-bottom: 0.75em;
+    /* deep nesting */ }
+    .widget ul li a {
+      text-decoration: none;
+      margin: 8px 0;
+      text-decoration: none;
+      font-size: 13px; }
+    .widget ul li ul {
+      margin-top: 0.75em;
+      padding-left: 1em; }
+
+/* links widget */
+/* meta widget */
+/* pages widget */
+/* recent-posts widget */
+/* archives widget */
+/* tag-cloud widget */
+/* calendar widget */
+/* category widget */
+/* recent-comments widget */
+/* search widget */
+/* text widget */
+/*********************
+FOOTER STYLES
+*********************/
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+.footer-links ul li {
+  /*
+  be careful with the depth of your menus.
+  it's very rare to have multi-depth menus in
+  the footer.
+  */ }
+
+/* end .footer-links */
+/*!
+ * Polyfill CSS object-fit
+ * http://helloanselm.com/object-fit
+ *
+ * @author: Anselm Hannemann <hello@anselm-hannemann.com> 
+ * @author: Christian "Schepp" Schaefer <schaepp@gmx.de>
+ * @version: 0.3.1
+ *
+ */
+x-object-fit {
+  position: relative !important;
+  display: inline-block !important; }
+
+x-object-fit > .x-object-fit-taller,
+x-object-fit > .x-object-fit-wider {
+  position: absolute !important;
+  top: -100% !important;
+  right: -100% !important;
+  bottom: -100% !important;
+  left: -100% !important;
+  margin: auto !important; }
+
+.x-object-fit-none > .x-object-fit-taller,
+.x-object-fit-none > .x-object-fit-wider {
+  width: auto !important;
+  height: auto !important; }
+
+.x-object-fit-fill > .x-object-fit-taller,
+.x-object-fit-fill > .x-object-fit-wider {
+  width: 100% !important;
+  height: 100% !important; }
+
+.x-object-fit-contain > .x-object-fit-taller {
+  width: auto !important;
+  height: 100% !important; }
+
+.x-object-fit-contain > .x-object-fit-wider {
+  width: 100% !important;
+  height: auto !important; }
+
+.x-object-fit-cover > .x-object-fit-taller,
+.x-object-fit-cover > .x-object-fit-wider {
+  max-width: none !important;
+  max-height: none !important; }
+
+.x-object-fit-cover > .x-object-fit-taller {
+  max-width: none !important;
+  width: 100% !important;
+  height: auto !important; }
+
+.x-object-fit-cover > .x-object-fit-wider {
+  max-width: none !important;
+  width: auto !important;
+  height: 100% !important; }
+
+.x-object-position-top > .x-object-fit-taller,
+.x-object-position-top > .x-object-fit-wider {
+  top: 0 !important;
+  bottom: auto !important; }
+
+.x-object-position-right > .x-object-fit-taller,
+.x-object-position-right > .x-object-fit-wider {
+  right: 0 !important;
+  left: auto !important; }
+
+.x-object-position-bottom > .x-object-fit-taller,
+.x-object-position-bottom > .x-object-fit-wider {
+  top: auto !important;
+  bottom: 0 !important; }
+
+.x-object-position-left > .x-object-fit-taller,
+.x-object-position-left > .x-object-fit-wider {
+  right: auto !important;
+  left: 0 !important; }
+
+/******************************************************************
+Site Name: Jockey International PR Marketing Site
+Author: Joshua Michaels/BioDesign
+Author URI: http://wearebio.com/
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+.wrap {
+  max-width: 1152px; }
+
+.main-menu li a {
+  font-size: 13px; }
+
+/*
+you can call the larger styles if you want, but there's really no need
+*/
+/******************************************************************
+ADDITIONAL IE FIXES
+These fixes are now ONLY seen by IE, so you don't have to worry
+about using prefixes, although it's best practice. For more info
+on using Modernizr classes, check out this link:
+http://www.modernizr.com/docs/
+******************************************************************/
+/*
+For example, you can use something like:
+
+.no-textshadow .class { ... }
+
+You can also target specific versions by using the classes applied to
+the html element. These can sometimes change, so take a look inside the
+header.php file to see what they are:
+
+
+.lt-ie8 .class { ... }
+
+*/
+.lt-ie9 .owl-carousel .overlay, .ie9 .owl-carousel .overlay, .ie8 .owl-carousel .overlay {
+  display: none !important; }
+
+.ie.ie9.category.windows #content {
+  margin-top: 34em !important; }
+
+.ie9 ul.sub-menu {
+  margin-top: -8px !important; }

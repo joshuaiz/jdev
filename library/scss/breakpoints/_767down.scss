@@ -1,0 +1,145 @@
+.header {
+	background-color: $black;
+	position: fixed;
+	top: 0;
+	z-index: 9;
+	width: 100%;
+	height: 60px;
+	transition: height 500ms;
+	// .header-bg {
+	// 	max-width: 100%;
+	// 	height: auto;
+	// }
+}
+
+#logo img {
+	width: 200px;
+	height: 44px;
+	position: relative;
+	top: 7px;
+	left: 0;
+}
+
+#click-menu {
+	right: 3% !important;
+	top: 12px !important;
+}
+
+.about-jockey {
+	#banner { 
+		background-position: 20% 0;
+		.banner-centered {
+			padding: .5em 1.5em 2.5em;
+		}
+	}
+}
+
+.international-collection, .international-collection-global-programs {
+	#banner {
+		background-position: 0 0;
+	}
+}
+
+.show-youre-jockey {
+	#banner {
+		background-position: 90% 0;
+	}
+}
+
+.usa-originals-mens {
+	#banner {
+		background-position: 10% 0;
+	}
+}
+
+.usa-originals-womens {
+	#banner {
+		background-position: 25% 0;
+	}
+}
+
+.usa-originals-global-programs {
+	#banner {
+		background-position: 85% 0;
+	}
+}
+
+.jockey-sport {
+	#banner {
+		background-position: 94% 0;
+	}
+}
+
+.nplp {
+	#banner {
+		background-position: 50% 20%;
+	}
+}
+
+
+#banner {
+	margin-top: 60px;
+	min-height: 400px;
+	.banner-centered {
+		padding: 1em 1.5em 3em;
+		font-size: .8em;
+	}
+}
+
+.partners:not(.category-33) {
+	#banner {
+		display: none;
+	}
+	.breadcrumbs-outer {
+		z-index: 9;
+		width: 100%;
+		background: #222;
+		position: fixed;
+		top: 60px;
+	}
+	#content {
+		margin-top: 7em;
+	}
+}
+
+.header-background {
+	display: none;
+	
+}
+
+.home #content {
+	// margin-top: 5em;
+}
+
+#content {
+	// background: #000;
+	margin-top: 2em;
+}
+
+#inner-content {
+	background-color: none;
+}
+
+.post-thumbnail img {
+	width: 100% !important;
+}
+
+.single-title, .page-title,
+.entry-title, .archive-title {
+	font-size: 1.2em;
+}
+
+#sidebar1 {
+	h4 { margin: 0; }
+	ul { margin: 0; }
+	.cat-item {
+		margin: .5em 0;
+	a {
+		font-size: 75%;
+	}
+}
+}
+
+.copyright {
+	font-size: 11px;
+}

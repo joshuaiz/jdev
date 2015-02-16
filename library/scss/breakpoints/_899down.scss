@@ -1,0 +1,29 @@
+/******************************************************************
+Site Name: Jockey International PR Marketing Site
+Author: Joshua Michaels/BioDesign
+Author URI: http://wearebio.com/
+
+Stylesheet: Tweener Stylesheet
+
+This is not a standard stylesheet with Bones but I almost always
+end up using it or one like it. Sometimes you need some styling
+just above tablet and below full desktop. So go to town.
+
+******************************************************************/
+
+
+.main-menu {
+
+	li {
+		float: left;
+		position: relative;
+		a { 
+			font-size: 11px;
+		}
+		li {
+			width: 220px;
+			float: none;
+			padding: none;
+		}
+	}
+}

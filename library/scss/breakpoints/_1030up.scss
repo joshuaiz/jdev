@@ -1,0 +1,119 @@
+/******************************************************************
+Site Name: Jockey International PR Marketing Site
+Author: Joshua Michaels/BioDesign
+Author URI: http://wearebio.com/
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+.wrap {
+  max-width: 1152px;
+}
+
+.header {
+	// height: 360px;
+}
+
+.main-menu li a {
+	font-size: 13px;
+}
+
+// .main-menu {
+	
+// 	li {
+// 		float: left;
+// 		position: relative;
+// 		// width: 100%;
+
+// 		a {
+// 			border-bottom: 0;
+// 			// font-weight: bold;
+// 			text-transform: uppercase;
+// 			font-size: 14px;
+// 			color: #fff;
+// 			padding: 1.5em 1.3em .5em 0;
+// 			// &:nth-of-type(5) { padding-right: 0; }
+			
+
+// 			/*
+// 			you can use hover styles here even though this size
+// 			has the possibility of being a mobile device.
+// 			*/
+// 			&:hover, &:focus {
+// 				color: $jockey-red;
+// 				text-decoration: none;
+				
+
+// 			}
+// 		}
+
+// 		ul.sub-menu,
+// 		ul.children {
+		
+
+// 			li {
+				
+
+// 				a {
+					
+// 					font-size: 12px;
+
+// 					&:hover,
+// 					&:focus { background: $black; }
+
+// 					&:link { }
+// 				}
+
+// 				&:first-child { }
+
+// 				&:last-child {
+
+// 					a {
+// 						border-bottom: 0;
+// 					}
+// 				}
+
+// 				/*
+// 				if you need to go deeper, go nuts
+// 				just remember deeper menus suck
+// 				for usability. k, bai.
+// 				*/
+// 				ul { }
+// 			}
+
+// 		}
+// }
+
+// }
+
+.ie.single, .ie.category, .ie.archive {
+	#content {
+		// margin-top: 34em !important;
+	}
+}
+
+.chrome.windows.home #content {
+	// margin-top: 11em !important;
+}
+
+// .ie10, .ie11 {
+// 	.main-menu li a {
+// 		padding: 1.5em 1.8em .5em 0 !important;
+// 		font-size: 16px !important;
+// 		// padding-left: 10px !important;
+// 	}
+// }
+
+.ie10:not(.home) {
+	#content {
+		// margin-top: 39em !important;
+	}
+}
+
+#content {
+	// margin-top: 39em;
+}

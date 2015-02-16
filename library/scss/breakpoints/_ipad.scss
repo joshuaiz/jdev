@@ -1,0 +1,136 @@
+
+.ipad {
+	.breadcrumbs {
+		display: block !important;
+}
+
+.home #content {
+	margin-top: 14em;
+	#home-posts {
+		margin-top: 0;
+	}
+}
+
+.single #content {
+	margin-top: 13em;
+}
+
+.archive, .category, .page {
+	#content {
+		margin-top: 14em;
+	}
+}
+
+ul#menu-main li#menu-item-22 > .sub-menu > li > ul {
+	display: none;
+}
+
+}
+
+
+
+/* iPad Portrait */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { 
+
+	.entry-content iframe {
+		max-width: 100% !important;
+		margin-bottom: 2em !important;
+	}
+
+	#menu-main {
+		top: 2.1em;
+	}
+
+	.single #content, .category #content, .archive #content {
+		margin-top: 14em; 
+	}
+
+	.home #content #home-posts {
+		margin-top: 2em;
+	}
+
+	.main-menu li a {
+		font-size: 11px; 
+	}
+
+	.sidebar {
+		display: none !important;
+	}
+
+	.page, .archive, .category, .single, .page {
+		#inner-content {
+			padding: 0 !important;
+		}
+		#main {
+			width: 100% !important;
+			padding: 0 !important;
+			.posts-loop {
+				width: 100% !important;
+			}
+		}
+	}
+
+}
+
+
+/* iPad Landscape */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+
+	#menu-main {
+		top: 1.6em;
+	}
+
+	.main-menu li a {
+		font-size: 15px; 
+	}
+
+	.home #content {
+
+		.posts-loop {
+			width: 73.45% !important;
+			padding-right: 1.5em;
+		}
+	}
+
+}
+
+/* iPad 3 & 4 Retina */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) { 
+
+
+
+
+}
+
+/* Retina iPad in landscape */ 
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+
+}
+
+
+/* Retina iPad in portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+
+}

@@ -89,18 +89,13 @@
 			</div>
 		</div>
 
-
-
-
-
-		
 		
 			<header class="header cf" role="banner">
 
 				<div id="inner-header" class="wrap cf">
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><div id="logo"><img src="<?php echo get_template_directory_uri(); ?>/library/images/jockey_logo.png"></div></a>
+					<a href="<?php echo home_url(); ?>" rel="nofollow"><div id="logo"><img src="http://dev.brandsite.jockeyinternational.com/wp-content/themes/jockeyintl/library/images/jockey_logo.png"></div></a>
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>

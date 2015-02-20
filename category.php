@@ -17,23 +17,35 @@
 					
 
 				<?php global $post;
-						$url = content_url();
+						
+					$url = content_url();
 
 					if (is_category( )) {
   					$cat = get_query_var('cat');
-  					$yourcat = get_category ($cat);
+  					$yourcat = get_category($cat);
+  					$parent = get_cat_name($category[0]->category_parent);
   					$slug = $yourcat->slug;
+  					$slugupper = strtoupper($yourcat->slug);
+  					$categories = get_categories('include='.get_query_var('cat'));
+
+		
  					} ?>
 
+					
+				
 
 						<div class="category-logo">
-							<img src="<?php echo $url; ?>/uploads/2014/05/<?php echo $slug; ?>.png">
-						<?php if ( $cat == 14 ) { ?>
-							<img src="<?php echo $url; ?>/uploads/2014/05/NEWZEALAND.png">
-						<?php } elseif ( $cat == 23 ) { ?>
-							<img src="<?php echo $url; ?>/uploads/2014/05/SINGAPORE.png">
-						<?php } ?>
-						</div>
+
+	<?php if ( $cat == 14 ) { ?>
+		<img src="<?php echo $url; ?>/uploads/2014/05/AUSTRALIA.png"><img src="<?php echo $url; ?>/uploads/2014/05/NEWZEALAND.png">
+	<?php } elseif ( $cat == 23 ) { ?>
+		<img src="<?php echo $url; ?>/uploads/2014/05/MALAYSIA.png"><img src="<?php echo $url; ?>/uploads/2014/05/SINGAPORE.png">
+	<?php } elseif ( $categories[0]->category_parent == 33 ) { ?>
+		<img src="<?php echo $url; ?>/uploads/2014/05/<?php echo $slugupper; ?>.png">
+	<?php } else { ?>
+		<img src="<?php echo $url; ?>/uploads/2014/05/<?php echo $slug; ?>.png">
+	<?php } ?>
+</div>
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

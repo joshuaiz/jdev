@@ -11,7 +11,6 @@ possible. This is called at the top of the main stylsheet
 and will be used across all viewports. Sweet.
 
 ******************************************************************/
-
 /*********************
 GENERAL STYLES
 *********************/
@@ -56,6 +55,7 @@ body {
 .category-logo img {
 	width: 150px;
 	height: auto;
+	margin-right: 8px;
 }
 
 .jockey-red {
@@ -332,6 +332,10 @@ style a page via class
 .showyourejockey, .show-youre-jockey {
 	#banner {
 		background: transparent url(/wp-content/uploads/2014/11/syj2015.png) top center no-repeat fixed;
+		-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
 	}
 
 	.banner-centered {
@@ -344,6 +348,10 @@ style a page via class
 .usa-originals-mens {
 	#banner {
 		background: transparent url(/wp-content/uploads/2014/11/usamensss15.png) top center no-repeat fixed;
+		-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
 	}
 	.banner-centered {
 		// margin-top: 100px;
@@ -353,6 +361,10 @@ style a page via class
 .usa-originals-womens {
 	#banner {
 		background: transparent url(/wp-content/uploads/2014/11/usawomensss15.png) top center no-repeat fixed;
+		-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
 	}
 	.banner-centered {
 		// margin-top: 200px;
@@ -362,6 +374,10 @@ style a page via class
 .international-collection, .international-collection-global-programs {
 	#banner {
 		background: transparent url(/wp-content/uploads/2014/11/intlss15.png) top center no-repeat fixed;
+		-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
 		// background-position: 0 40% !important;
 	}
 
@@ -374,6 +390,10 @@ style a page via class
 .usa-originals-global-programs {
 	#banner {
 		background: transparent url(/wp-content/uploads/2014/05/USAGLOBAL.png) top center no-repeat fixed;
+		-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
 	}
 
 	.banner-centered {
@@ -384,6 +404,10 @@ style a page via class
 .jockey-sport {
 	#banner {
 		background: transparent url(/wp-content/uploads/2014/05/SPORTGLOBAL.png) top center no-repeat fixed;
+		-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
 	}
 
 	.banner-centered {
@@ -394,18 +418,30 @@ style a page via class
 .nplp {
 	#banner {
 		background: transparent url(/wp-content/uploads/2014/05/NPLP-bg.png) top center no-repeat fixed;
+		-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
 	}
 }
 
 .seamless-shapewear {
 	#banner {
 		background: transparent url(/wp-content/uploads/2014/05/Shapewear.png) top center no-repeat fixed;
+		-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
 	}
 }
 
 .partners, .parent-partner-pages {
 	#banner {
 		background: transparent url(/wp-content/uploads/2014/05/PARTNER.png) top center no-repeat fixed !important;
+		-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
 	}
 }
 

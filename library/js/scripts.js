@@ -129,11 +129,11 @@ jQuery(document).ready(function($) {
     {
         if ($window.width() < 900 && $window.width() > 767)
         {
-            $('#logo img').addClass('swirl').attr('src', 'http://jockey.dev:8888/wp-content/themes/jockeyintl/library/images/jockey_swirl.png');
+            $('#logo img').addClass('swirl').attr('src', 'http://dev.brandsite.jockeyinternational.com/wp-content/themes/jockeyintl/library/images/jockey_swirl.png');
         }
         else
         {
-            $('#logo img').removeClass('swirl').attr('src', 'http://jockey.dev:8888/wp-content/themes/jockeyintl/library/images/jockey_logo.png');
+            $('#logo img').removeClass('swirl').attr('src', 'http://dev.brandsite.jockeyinternational.com/wp-content/themes/jockeyintl/library/images/jockey_logo.png');
         }
 
         if($window.width() < 768 ) {
@@ -214,33 +214,33 @@ function scrollBanner() {
       'background-position' : 'center ' + (-scrollPos/2)+'px'
     });
 
-    $('.international-collection #banner, .international-collection-global-programs #banner').css({
-      'background-position' : '0 ' + (-scrollPos/2)+'px'
-    });
+    // $('.international-collection #banner, .international-collection-global-programs #banner').css({
+    //   'background-position' : '0 ' + (-scrollPos/2)+'px'
+    // });
 
     $('.show-youre-jockey #banner').css({
       'background-position' : '90% ' + (-scrollPos/2)+'px'
     });
 
-    $('.usa-originals-mens #banner').css({
-      'background-position' : '10% ' + (-scrollPos/2)+'px'
-    });
+    // $('.usa-originals-mens #banner').css({
+    //   'background-position' : '10% ' + (-scrollPos/2)+'px'
+    // });
 
-    $('.usa-originals-womens #banner').css({
-      'background-position' : '25% ' + (-scrollPos/2)+'px'
-    });
+    // $('.usa-originals-womens #banner').css({
+    //   'background-position' : '25% ' + (-scrollPos/2)+'px'
+    // });
 
-    $('.usa-originals-global-programs #banner').css({
-      'background-position' : '85% ' + (-scrollPos/2)+'px'
-    });
+    // $('.usa-originals-global-programs #banner').css({
+    //   'background-position' : '85% ' + (-scrollPos/2)+'px'
+    // });
 
-    $('.jockey-sport #banner').css({
-      'background-position' : '94% ' + (-scrollPos/2)+'px'
-    });
+    // $('.jockey-sport #banner').css({
+    //   'background-position' : '94% ' + (-scrollPos/2)+'px'
+    // });
 
-    $('.nplp #banner').css({
-      'background-position' : '50% ' + '20%' + (-scrollPos/2)+'px'
-    });
+    // $('.nplp #banner').css({
+    //   'background-position' : '50% ' + '20%' + (-scrollPos/2)+'px'
+    // });
 
   });    
 }

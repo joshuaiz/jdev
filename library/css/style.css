@@ -14,7 +14,7 @@ of the styles inside media queries.
 Helpful articles on Sass file organization:
 http://thesassway.com/advanced/modular-css-naming-conventions
 
-******************************************************************/
+*****************************************************************/
 /*********************
 IMPORTING PARTIALS
 These files are needed at the beginning so that we establish all
@@ -990,7 +990,8 @@ body {
 
 .category-logo img {
   width: 150px;
-  height: auto; }
+  height: auto;
+  margin-right: 8px; }
 
 .jockey-red {
   color: #C00000 !important; }
@@ -1188,31 +1189,67 @@ style a page via class
   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2014/05/aboutjockey.png',sizingMethod='scale')"; }
 
 .showyourejockey #banner, .show-youre-jockey #banner {
-  background: transparent url(/wp-content/uploads/2014/11/syj2015.png) top center no-repeat fixed; }
+  background: transparent url(/wp-content/uploads/2014/11/syj2015.png) top center no-repeat fixed;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; }
 
 .usa-originals-mens #banner {
-  background: transparent url(/wp-content/uploads/2014/11/usamensss15.png) top center no-repeat fixed; }
+  background: transparent url(/wp-content/uploads/2014/11/usamensss15.png) top center no-repeat fixed;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; }
 
 .usa-originals-womens #banner {
-  background: transparent url(/wp-content/uploads/2014/11/usawomensss15.png) top center no-repeat fixed; }
+  background: transparent url(/wp-content/uploads/2014/11/usawomensss15.png) top center no-repeat fixed;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; }
 
 .international-collection #banner, .international-collection-global-programs #banner {
-  background: transparent url(/wp-content/uploads/2014/11/intlss15.png) top center no-repeat fixed; }
+  background: transparent url(/wp-content/uploads/2014/11/intlss15.png) top center no-repeat fixed;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; }
 
 .usa-originals-global-programs #banner {
-  background: transparent url(/wp-content/uploads/2014/05/USAGLOBAL.png) top center no-repeat fixed; }
+  background: transparent url(/wp-content/uploads/2014/05/USAGLOBAL.png) top center no-repeat fixed;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; }
 
 .jockey-sport #banner {
-  background: transparent url(/wp-content/uploads/2014/05/SPORTGLOBAL.png) top center no-repeat fixed; }
+  background: transparent url(/wp-content/uploads/2014/05/SPORTGLOBAL.png) top center no-repeat fixed;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; }
 
 .nplp #banner {
-  background: transparent url(/wp-content/uploads/2014/05/NPLP-bg.png) top center no-repeat fixed; }
+  background: transparent url(/wp-content/uploads/2014/05/NPLP-bg.png) top center no-repeat fixed;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; }
 
 .seamless-shapewear #banner {
-  background: transparent url(/wp-content/uploads/2014/05/Shapewear.png) top center no-repeat fixed; }
+  background: transparent url(/wp-content/uploads/2014/05/Shapewear.png) top center no-repeat fixed;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; }
 
 .partners #banner, .parent-partner-pages #banner {
-  background: transparent url(/wp-content/uploads/2014/05/PARTNER.png) top center no-repeat fixed !important; }
+  background: transparent url(/wp-content/uploads/2014/05/PARTNER.png) top center no-repeat fixed !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important; }
 
 /*********************
 LAYOUT & GRID STYLES
@@ -2042,17 +2079,18 @@ HEADER STYLES
   #banner {
     overflow: hidden;
     width: 100%;
-    height: 610px;
+    min-height: 610px;
+    height: auto !important;
     position: relative;
     top: 0;
     clear: both;
     background: transparent url(/wp-content/uploads/2014/11/mainpage.png) top center no-repeat fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale');
-    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='path/to/image/1.jpg',sizingMethod='scale')"; }
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2014/11/mainpage.png',sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/wp-content/uploads/2014/11/mainpage.png',sizingMethod='scale')"; }
   .wrap-center {
     margin: 0 auto;
     position: relative;
@@ -2253,7 +2291,11 @@ I like having these above 768px - so there.
   /* paged items like search results or archives */
   /* individual paged (i.e. body.paged-3) */
   .partners:not(.category-33) .header {
-    background: transparent url(/wp-content/uploads/2014/05/PARTNER.png) top center no-repeat fixed !important; }
+    background: transparent url(/wp-content/uploads/2014/05/PARTNER.png) top center no-repeat fixed !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important; }
   .partners:not(.category-33) .header.shrink {
     height: 69px !important; }
   .category-33 #banner {
@@ -2477,6 +2519,10 @@ on larger screens.
 LARGER VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 *********************/
+@media only screen and (min-width: 1600px) {
+  #banner {
+    min-height: 800px; } }
+
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
